@@ -1,33 +1,59 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <!-- <script src="https://rawgit.com/oscarmarinmiro/aframe-stereo-component/master/dist/aframe-stereo-component.min.js"></script> -->
+    <meta charset="utf-8">
+    <title>RICOH THETA SF Sept MeetUp - A-Frame Demo</title>
+    <meta name="description" content="Panorama — A-Frame">
+    <script src="dist/aframe.js"></script>
+    <style>
+
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    ul {
+      font-size: 24px;
+    }
+    </style>
   </head>
   <body>
-    <a-scene
-      background="color: #ECECEC"
-      inspector=""
-      keyboard-shortcuts=""
-      screenshot=""
-      xr-mode-ui=""
-      device-orientation-permission-ui=""
-    >
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder
-        position="1 0.75 -3"
-        radius="0.5"
-        height="1.5"
-        color="#FFC65D"
-      ></a-cylinder>
-      <a-plane
-        position="0 0 -4"
-        rotation="-90 0 0"
-        width="4"
-        height="4"
-        color="#7BC3F1"
-      ></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
+    <h1> A-Frame Test </h1>
+    Simple test using <a href="https://aframe.io/">A-Frame</a>.
+    View the links below using a browser on your mobile phone with Google Cardboard or the
+      RICOH cardboard viewer. Gyroscope navigation should work.
+      These pictures taken with the RICOH THETA at the September 2016
+      MeetUp in San Francisco.
+    <ul>
+      <li><a href="scene1.html">Scene 1</a></li>
+      <li><a href="scene2.html">Scene 2</a></li>
+      <li><a href="scene3.html">Scene 3</a></li>
+      <li><a href="scene4.html">Scene 4</a></li>
+    </ul>
+    Basically one line of code.
+    <br>
+    <img src="image/code-sample.png">
+    <p>
+      Fork the code from <a href="https://github.com/codetricity/aframe-demo">GitHub</a>.
+    </p>
+    <p>
+      Note: Suggest you use GitHub Pages to test. It may not work on your local filesystem
+      unless you run a local HTTP server
+      due to Cross-Origin Resource Sharing (CORS) errors.
+    </p>
+
+    <a href="http://lists.theta360.guide/t/ricoh-theta-and-webvr-quick-howto/440?u=codetricity">Discussion</a>
+
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73311422-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
